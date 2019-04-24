@@ -9,13 +9,13 @@ public class Main {
     public static Font textFont = new Font("Arial", Font.BOLD, 20);
 
     public static void main(String[] args) {
-        frame = new JFrame(); // создаем окно
-        frame.setLocationRelativeTo(null); // открытие окна по центру
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // устанавливаем стандартный тип закрытия
-        frame.setSize(300,150); // задаем размеры окна
-        frame.setTitle("Угадай число"); // задаем название окна
-        frame.setResizable(false); // отключаем возможность изменения окна
-        frame.add(new GamePanel(), BorderLayout.CENTER); // добавляем основную панель с игрой
-        frame.setVisible(true); // делаем окно видимым
+        frame = new JFrame();
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(300,150);
+        frame.setTitle("Угадай число");
+        frame.setResizable(false);
+        frame.add(new GamePanel(), BorderLayout.CENTER);
+        frame.setVisible(true);
     }
 }

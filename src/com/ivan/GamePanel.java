@@ -9,46 +9,46 @@ import static com.ivan.Main.textFont;
 
 public class GamePanel extends JPanel {
 
-    private String number; // строка правильного ответа
+    private String number;
 
-    private JLabel numberField; // лейбл где отображаем XXXX
-    private JLabel resultField; // лейбл отоббражающий R W и ошибку
+    private JLabel numberField;
+    private JLabel resultField;
 
-    private JFormattedTextField answerField; // поле для ввода текста. взят формат, т.к. нужно вводить  только цифры
-    private JButton checkAnswer; // кнопка проверки ответа
+    private JFormattedTextField answerField;
+    private JButton checkAnswer;
 
-    private int playersTry = 0; // количество ошибок
+    private int playersTry = 0;
 
-    private JButton help; // кнопка показывающая правила
+    private JButton help;
 
     public GamePanel() {
-        this.setLayout(new BorderLayout()); // задаем тип сетки
+        this.setLayout(new BorderLayout());
 
 
-        this.numberField = new JLabel("XXXX"); // создаем лейбл, задаем ему шрифт и ставим по центру
+        this.numberField = new JLabel("XXXX");
         this.numberField.setFont(textFont);
         this.numberField.setVerticalAlignment(SwingConstants.CENTER);
         this.numberField.setHorizontalAlignment(SwingConstants.CENTER);
 
-        this.resultField = new JLabel(); // создаем лейбл, задаем ему шрифт и ставим по центру
+        this.resultField = new JLabel();
         this.resultField.setFont(textFont);
         this.resultField.setVerticalAlignment(SwingConstants.CENTER);
         this.resultField.setHorizontalAlignment(SwingConstants.CENTER);
 
-        MaskFormatter answerMask = null; // формируем маску для ввода цифр
+        MaskFormatter answerMask = null;
         try {
-            answerMask = new MaskFormatter("####"); // # - позволяет вводить только цифры => #### - 4 цифры
+            answerMask = new MaskFormatter("####");
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        this.answerField = new JFormattedTextField(answerMask); // создаем поле с вводом ответа с помощью маски
-        this.answerField.setPreferredSize(new Dimension(40,30)); // определяем размеры
-        this.checkAnswer = new JButton("Проверить"); // создаем кнопку и добавляем обработчик событий
+        this.answerField = new JFormattedTextField(answerMask);
+        this.answerField.setPreferredSize(new Dimension(40,30));
+        this.checkAnswer = new JButton("Проверить");
         this.checkAnswer.addActionListener(e -> {
            this.checkAnswer();
         });
 
-        this.help = new JButton("Справка");// создаем кнопку и добавляем обработчик событий
+        this.help = new JButton("Справка");
         this.help.addActionListener(e -> {
             this.openRules();
         });

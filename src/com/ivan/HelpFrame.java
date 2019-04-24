@@ -11,12 +11,12 @@ public class HelpFrame extends JFrame {
             "Если есть несколько W или  R, то таких цифр несколько.";
 
     public HelpFrame() {
-        JTextArea rules = new JTextArea(info); //создаем поле и в него вставляем инструкцию
-        rules.setLineWrap(true); // разрешаем перенос текста
-        rules.setWrapStyleWord(true); // разрешаем перенос текста целыми словами
-        rules.setEditable(false); // отключаем возможность изменения текста
-        rules.setBackground(Color.LIGHT_GRAY); // меня цвет на серый
-        rules.setDisabledTextColor(Color.BLACK); // вовзращаем тексту черный цвет
-        this.add(rules, BorderLayout.CENTER); // добавляем в центр
+        JTextArea rules = new JTextArea(info);
+        rules.setLineWrap(true);
+        rules.setWrapStyleWord(true);
+        rules.setEditable(false);
+        rules.setBackground(Color.LIGHT_GRAY);
+        rules.setDisabledTextColor(Color.BLACK);
+        this.add(rules, BorderLayout.CENTER);
     }
 }

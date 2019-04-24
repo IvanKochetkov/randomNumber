@@ -10,10 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
         frame = new JFrame();
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300,150);
-        frame.setTitle("Угадай число");
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setLocation(screenSize.width/2-frame.getSize().width/2, screenSize.height/2-frame.getSize().height/2);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setTitle("Numbinator");
         frame.setResizable(false);
         frame.add(new GamePanel(), BorderLayout.CENTER);
         frame.setVisible(true);

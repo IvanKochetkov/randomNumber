@@ -14,7 +14,7 @@ public class EndPanel extends JPanel {
         result.setEnabled(false);
         result.setDisabledTextColor(Color.BLACK);
         result.setSelectionColor(Color.CYAN);
-        JButton tryAgain = new JButton("Ещё Раз?");
+        JButton tryAgain = new JButton("Play again");
         tryAgain.setHorizontalAlignment(SwingConstants.CENTER);
         tryAgain.addActionListener(e -> {
             Main.frame.remove(this);
@@ -23,7 +23,7 @@ public class EndPanel extends JPanel {
             Main.frame.repaint();
         });
 
-        this.add(result); // выводим на панель поле текстовое
-        this.add(tryAgain, BorderLayout.SOUTH); // снизу доббавляем кнопку
+        this.add(result);
+        this.add(tryAgain, BorderLayout.SOUTH);
     }
 }

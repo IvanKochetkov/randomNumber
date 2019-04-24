@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ce09eccc-5552-49bb-8dc1-0f99d6affdfb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/ivan/EndPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ivan/EndPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ivan/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ivan/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ivan/HelpFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ivan/HelpFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ivan/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ivan/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ivan/NumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ivan/NumberGenerator.java" afterDir="false" />
-    </list>
+    <list default="true" id="ce09eccc-5552-49bb-8dc1-0f99d6affdfb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -129,7 +123,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1612" />
@@ -214,16 +208,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556041656661</updated>
       <workItem from="1556041666283" duration="14265000" />
-      <workItem from="1556081921768" duration="7919000" />
+      <workItem from="1556081921768" duration="8513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22184000" />
+    <option name="totallyTimeSpent" value="22778000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -235,7 +228,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32913387" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32913387" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />

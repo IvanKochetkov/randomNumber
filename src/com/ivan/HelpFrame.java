@@ -4,19 +4,19 @@ import javax.swing.*;
 import java.awt.*;
 
 public class HelpFrame extends JFrame {
-    private static String info =
-            "Вы должны ввести 4-х значное число .\n" +
-            "W - В вашем числе есть цифра загаданного числа, но она стоит не на своём месте\n" +
-            "R - В вашем числе есть цифра загаданного числа и стоит на своём месте\n" +
-            "Если таких W или R несколько , значит в вашем числе несколько таких цифр .";
+    public static String info =
+            "Введите 4-х значное число.\n" +
+            "W - Означает, что в вашем числе есть цифра загаданного числа, но стоит не на своём месте\n" +
+            "R - Означает, что в вашем числе есть цифра загаданного числа и стоит на своём месте\n" +
+            "Если таких W или R несколько, то таких цифр несеколько.";
 
     public HelpFrame() {
-        JTextArea rules = new JTextArea(info);
-        rules.setLineWrap(true);
-        rules.setWrapStyleWord(true);
-        rules.setEditable(false);
-        rules.setBackground(Color.LIGHT_GRAY);
-        rules.setDisabledTextColor(Color.BLACK);
-        this.add(rules, BorderLayout.CENTER);
+        JTextArea rules = new JTextArea(info); //создаем поле и в него вставляем инструкцию
+        rules.setLineWrap(true); // разрешаем перенос текста
+        rules.setWrapStyleWord(true); // разрешаем перенос текста целыми словами
+        rules.setEditable(false); // отключаем возможность изменения текста
+        rules.setBackground(Color.LIGHT_GRAY); // меня цвет на серый
+        rules.setDisabledTextColor(Color.BLACK); // вовзращаем тексту черный цвет
+        this.add(rules, BorderLayout.CENTER); // добавляем в центр
     }
 }

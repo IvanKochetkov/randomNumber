@@ -8,22 +8,22 @@ import static com.ivan.Main.textFont;
 
 public class EndPanel extends JPanel {
 
-    public EndPanel(String text) {
-        JTextArea result = new JTextArea(text);
-        result.setFont(textFont);
-        result.setEnabled(false);
-        result.setDisabledTextColor(Color.BLACK);
-        result.setSelectionColor(Color.CYAN);
-        JButton tryAgain = new JButton("Play again");
-        tryAgain.setHorizontalAlignment(SwingConstants.CENTER);
-        tryAgain.addActionListener(e -> {
-            Main.frame.remove(this);
-            Main.frame.add(new GamePanel());
-            Main.frame.validate();
-            Main.frame.repaint();
+    public EndPanel(String text) { // передаем выводимый текст
+        JTextArea result = new JTextArea(text); // создаем поле для вывода
+        result.setFont(textFont); // используем шрифт созданный в Main
+        result.setEnabled(false); // отключаем возможность ручного редактирования
+        result.setDisabledTextColor(Color.BLACK); // т.к. поле выключено, меняем цвет отключенного текста на черный
+        result.setSelectionColor(Color.CYAN); // меняем цвет бэка
+        JButton tryAgain = new JButton("Play again"); // добавляем кнопку перезапуска
+        tryAgain.setHorizontalAlignment(SwingConstants.CENTER); // ставим кнопку по центру
+        tryAgain.addActionListener(e -> { // добавляем на кнопку обработчик
+            Main.frame.remove(this); // очищает основной фрейм от этого компонента
+            Main.frame.add(new GamePanel()); // добавляем компонент реализующий игру
+            Main.frame.validate(); // 2 метода для корректной отрисовки фрейма
+            Main.frame.repaint(); // 2 метода для корректной отрисовки фрейма
         });
 
-        this.add(result);
-        this.add(tryAgain, BorderLayout.SOUTH);
+        this.add(result); // выводим на панель поле текстовое
+        this.add(tryAgain, BorderLayout.SOUTH); // снизу доббавляем кнопку
     }
 }

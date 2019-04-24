@@ -10,13 +10,13 @@ public class Main {
 
     public static void main(String[] args) {
         frame = new JFrame();
-        frame.setSize(300,150);
+        frame.setSize(500,400);
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        frame.setLocation(screenSize.width/2-frame.getSize().width/2, screenSize.height/2-frame.getSize().height/2);
+        frame.setLocation(screenSize.width/2-frame.getSize().width/2, screenSize.height/2-frame.getSize().height/2); // ..
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Numbinator");
         frame.setResizable(false);
-        frame.add(new GamePanel(), BorderLayout.CENTER);
+        frame.add(new GamePanel());
         frame.setVisible(true);
     }
 }
